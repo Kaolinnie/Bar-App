@@ -1,3 +1,3 @@
-function submitData(){
-    console.log("hello");
+function submitClientName() {
+    console.log($("#clientName").val());
 }

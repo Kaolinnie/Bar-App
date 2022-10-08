@@ -6,7 +6,7 @@ class Main extends \app\core\Controller{
 		$this->view('Main/index');
 	}
 	
-	public function orderPage(){
+	public function startOrder(){
 		$this->view('Main/orderPage');
 	}
 }
