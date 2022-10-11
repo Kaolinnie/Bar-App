@@ -1,6 +1,36 @@
+@media (orientation: landscape) {
+
+}
+@media (orientation: portrait) {
+
+}
+.logo {
+    opacity:0.2;
+    position: fixed;
+}
 .appDivision {
+    display: none;
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* .appDivision {
+    position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 10%;
     background-color: #74A186;
-}
+} */
