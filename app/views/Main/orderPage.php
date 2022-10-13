@@ -33,8 +33,25 @@
     </div>
     <div class="appDivision itemsDiv" data-index="3">
       <label>Items</label>
+
+      <div class="drinkTabs" data-index="3">
+        <button onclick="displayTab(1)">B</button>
+        <button onclick="displayTab(2)">M</button>
+        <button onclick="displayTab(3)">P</button>
+        <button onclick="displayTab(4)">S</button>
+        <button onclick="displayTab(5)">W</button>
+      </div>
+      <div class="contentTabs">
+        <div class="tab tab1 activeTab">Hello</div>
+        <div class="tab tab2">Goodbye</div>
+        <div class="tab tab3"></div>
+        <div class="tab tab4"></div>
+        <div class="tab tab5"></div>
+      </div>
+
     </div>
-  </section>
+   
+</section>
   <div class="actions">
     <button onclick="previousPage()">Previous</button>
     <button onclick="nextPage()">Next</button>

@@ -43,3 +43,9 @@ input{
     padding-top: 10%;
     background-color: #74A186;
 } */
+
+.tab{
+    display:grid;
+    width: 70px;
+  
+  }
