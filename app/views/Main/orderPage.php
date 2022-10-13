@@ -8,19 +8,36 @@
 <body>
     <!-- <img class="logo" src="/app/resources/images/logo.png" alt=""> -->
 
-    <!-- <div class="appDivision clientNameDiv">
-        <form action="" method="get">
-            <input type="text" placeholder="Client's Name" id="clientName"><br>
-            <span onclick="submitClientName()">Next</span>
-        </form>
-    </div> -->
-    <section class="appDivision laneNumberDiv" style="display: flex;">
-        <label>Lane Number: <input type="text" pattern="[0-9]*" inputmode="numeric" id="laneNumberInput"></label>
-        <label>Name: <input type="text" id="nameInput"></label>
+    <section class="appDivison">
+    <div class='numInputDiv'>
+  <div class='tensInput numInput'>
+    <button class='numButton' onclick='increaseTens()'>
+      ^
+    </button>
+    <span class='tensSpan numSpan'>0</span>
+    <button class='numButton' onclick='decreaseTens()'>
+      v
+    </button>
+  </div>
+  <div class='onesInput numInput'>
+    <button class='numButton' onclick='increaseOnes()'>
+      ^
+    </button>
+    <span class='onesSpan numSpan'>0</span>
+    <button class='numButton' onclick='decreaseOnes()'>
+      v
+    </button>
+  </div>
+</div>
+</section>
+
+    <section class="appDivision">
+        <label>Name: <input type="text" id="laneName"></label>
     </section>
-    <section class="appDivision orderItems">
-        <label>Items: <input type="text" pattern="[0-9]*" inputmode="numeric" id="laneNumber"></label>
-    </section>
+    
+    <a onclick="submitClientName()">
+        <span>Next Page</span>
+    </a>
 
     <script type="text/javascript" src="/app/resources/scripts/main.js"></script>
 </body>

@@ -9,10 +9,9 @@
     position: fixed;
 }
 .appDivision {
-    display: none;
-    position: absolute;
-    /* width: 100%;
-    height: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
@@ -20,7 +19,55 @@
 label {
     display: flex;
     flex-direction: column;
+    color: white;
 }
+
+input{
+    color: black;
+}
+
+a {
+    background-color: #74A186;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100;
+}
+
+.numInputDiv {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .numInput {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .numButton {
+    height: 100px;
+    width: 100px;
+    font-size: 1.5em;
+  }
+  
+  .numSpan {
+    display: block;
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+  }
+
 
 
 
