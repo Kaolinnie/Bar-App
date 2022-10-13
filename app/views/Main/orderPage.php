@@ -6,7 +6,6 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>Laurentian Lanes</title>
   <link rel="stylesheet" href="/app/resources/styles/main.css">
-  <link rel="stylesheet" href="/app/resources/styles/order.css">
 </head>
 
 <body>
@@ -32,9 +31,7 @@
       <input type="text" id="laneName">
     </div>
     <div class="appDivision itemsDiv" data-index="3">
-      <label>Items</label>
-
-      <div class="drinkTabs" data-index="3">
+      <div class="drinkTabs">
         <button onclick="displayTab(1)">B</button>
         <button onclick="displayTab(2)">M</button>
         <button onclick="displayTab(3)">P</button>
@@ -42,11 +39,11 @@
         <button onclick="displayTab(5)">W</button>
       </div>
       <div class="contentTabs">
-        <div class="tab tab1 activeTab">Hello</div>
-        <div class="tab tab2">Goodbye</div>
-        <div class="tab tab3"></div>
-        <div class="tab tab4"></div>
-        <div class="tab tab5"></div>
+        <div class="tab1 activeTab">Hello</div>
+        <div class="tab2">Goodbye</div>
+        <div class="tab3"></div>
+        <div class="tab4"></div>
+        <div class="tab5"></div>
       </div>
 
     </div>

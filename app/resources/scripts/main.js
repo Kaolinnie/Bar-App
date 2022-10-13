@@ -17,7 +17,7 @@ function nextPage() {
   $("[data-index="+(currentPageIndex+1)+"]").addClass("active");
 }
 function displayTab(index){
-  $(".tab").removeClass("activeTab");
+  $(".contentTabs").children('div').removeClass("activeTab");
   $(".tab" + index).addClass("activeTab");
 }
 
