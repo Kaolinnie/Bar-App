@@ -4,6 +4,33 @@ class receipt {
 
 var order = new receipt();
 
+function previousPage() {
+  var currentPageIndex = $(".active").data("index");
+  if(currentPageIndex==1) return;
+  $(".active").removeClass("active");
+  $("[data-index="+(currentPageIndex-1)+"]").addClass("active");
+}
+function nextPage() {
+  var currentPageIndex = $(".active").data("index");
+  if(currentPageIndex==3) return;
+  $(".active").removeClass("active");
+  $("[data-index="+(currentPageIndex+1)+"]").addClass("active");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//instead of submit client name, this will be submit everything
+
 function submitClientName() {
     //submit lane number
     order.laneName = $("#laneName").val();
@@ -20,7 +47,9 @@ function submitClientName() {
 
 function increaseTens() {
     var num = parseInt($(".tensSpan").text());
+    var onesNum = parseInt($(".onesSpan").text());
     if (num == 6) return;
+    if (num==5&&onesNum>6) return;
     $(".tensSpan").text(num + 1);
   }
   
@@ -44,7 +73,14 @@ function increaseTens() {
   
   function decreaseOnes() {
     var num = parseInt($(".onesSpan").text());
-    if (num == 0) return;
+    var tensNum = parseInt($(".tensSpan").text());
+    
+    if (num == 0) {
+      if(tensNum==0) return;
+      decreaseTens();
+      $(".onesSpan").text("9");
+      return;
+    }
     $(".onesSpan").text(num - 1);
   }
   

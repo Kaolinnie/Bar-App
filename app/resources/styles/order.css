@@ -1,21 +1,8 @@
-@media (orientation: landscape) {
 
-}
-@media (orientation: portrait) {
 
-}
-.logo {
-    opacity:0.2;
-    position: fixed;
-}
-.appDivision {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-}
+
+
+/* 
 label {
     display: flex;
     flex-direction: column;
@@ -24,9 +11,9 @@ label {
 
 input{
     color: black;
-}
+} */
 
-a {
+/* a {
     background-color: #74A186;
     border-radius: 10rem;
     display: flex;
@@ -38,35 +25,10 @@ a {
     margin-right: auto;
     width: 50%;
     height: 100;
-}
+    font-size: 1em;
+} */
 
-.numInputDiv {
-    background-color: orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .numInput {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .numButton {
-    height: 100px;
-    width: 100px;
-    font-size: 1.5em;
-  }
-  
-  .numSpan {
-    display: block;
-    height: 30px;
-    width: 100%;
-    background-color: white;
-    text-align: center;
-    line-height: 30px;
-  }
+
 
 
 
